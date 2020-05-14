@@ -1,0 +1,23 @@
+venv - main folder with all libraries
+requirement.txt - dependencies for libraries, with version
+-------------------------------------------------------------------------------
+web_app - root folder
+web_app/run.py - main file to start webserver(just RUN it)
+web_app/views.py - interconnection between path in browser and function(report)
+web_app/images - projects images
+web_app/static - all static documents (css)
+web_app/templates - html templates
+-------------------------------------------------------------------------------
+create_excel_reports - contains files which you should use in web_app/views.py
+excel/edit_excel.py - main file which open/edit/save excel files
+ftp/reports/excel - excel templates
+ftp/templates/excel - excel reports (after printing it deleted)
+printers/printers.py - actions with printers, print
+-------------------------------------------------------------------------------
+example of adding new excel report
+1. add py file in folder -> ./create_excel_reports
+2. add the name of file without extention (.py) into file -> ./create_excel_reports/__init__.py (needs to see your file in ./web_app/views.py)
+3. add excel template into ./ftp/templates/excel
+4.1 add new function into -> ./web_app/views.py
+4.2 add to @app.route "route" for your function, like '/excel_reports/fuel_control_reports'
+5. create your db object in Oracle and call it in function from -> ./create_excel_reports/
