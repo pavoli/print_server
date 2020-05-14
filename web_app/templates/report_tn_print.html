@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table border="1" align="left">
+		<tr>
+			<td colspan="2" align="center">Данные по отправленному контейнеру</td>
+		</tr>
+		<tr>
+			<td>Номер контейнера</td>
+			<td>{{ answer[0] }}</td>
+		</tr>
+		<tr>
+			<td>Порт возврата</td>
+			<td>{{ answer[1] }}</td>
+		</tr>
+		<tr>
+			<td>Номер машины</td>
+			<td>{{ answer[2] }}</td>
+		</tr>
+		<tr>
+			<td>Марка машины</td>
+			<td>{{ answer[3] }}</td>
+		</tr>
+		<tr>
+			<td>ФИО водителя</td>
+			<td>{{ answer[4] }}</td>
+		</tr>
+		<tr>
+			<td>Компания</td>
+			<td>{{ answer[5] }}</td>
+		</tr>
+		<tr>
+			<td>Комментарий </td>
+			<td>{{ answer[6] }}</td>
+		</tr>
+</table>
+{% endblock %}
