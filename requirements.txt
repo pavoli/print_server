@@ -18,7 +18,7 @@ pylint==2.4.4
 python-barcode==0.11.0
 pywin32==224
 qrcode==6.1
-reportlab==3.5.42
+reportlab==3.5.55
 rope==0.16.0
 six==1.14.0
 typed-ast==1.4.1
